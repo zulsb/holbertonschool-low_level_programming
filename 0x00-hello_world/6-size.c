@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	printf("%lu\n", sizeof(char)); 
-	printf("%lu\n", sizeof(int)); 
-	printf("%lu\n", sizeof(float)); 
-	printf("%lu", sizeof(double));
+	printf("Number of elements:%lu\n", sizeof(char));
+	printf("Number of elements :%lu\n", sizeof(int));
+	printf("Number of elements :%lu\n", sizeof(float));
+	printf("Number of elements :%lu\n", sizeof(double));
 	return (0);
 }
