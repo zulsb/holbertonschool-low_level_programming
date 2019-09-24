@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -13,17 +14,22 @@ void print_to_98(int n)
 	{
 	for (x = n; x >= 98; x--)
 		{
-		printf("%d, ", n);
+			if (x != 98)
+				printf("%d, ", x);
+			else
+				printf("%d", x);
 		}
 	}
 	else
-	(n < 98)
 	{
 	for (x = n; x <= 98; x++)
 		{
-		printf("%d, ", n);
+			if (x != 98)	
+				printf("%d, ", x);
+			else
+				printf("%d", x);
 		}
 	}
-	printf('\n');
+	printf("\n");
 
 }
