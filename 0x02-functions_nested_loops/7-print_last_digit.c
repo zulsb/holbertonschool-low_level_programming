@@ -2,10 +2,10 @@
 
 /**
  * print_last_digit - Last digit of a number.
- * @r: Parameter
+ * @n: Parameter
  * Return: Always 0 (Success)
  */
-int print_last_digit(int r)
+int print_last_digit(int n)
 {
 	int r;
 
