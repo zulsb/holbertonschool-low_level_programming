@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-  * print_alphabetx10 - Print alphabet a to z lowercase 10 times
+  * print_alphabet_x10 - Print alphabet a to z lowercase 10 times
   *
   * Return: Always 0 (Success)
   */
@@ -11,9 +11,8 @@ void print_alphabet_x10(void)
 	int y;
 
 	for (y = 0; y < 10; y++)
-
 	{
-	for (; x <= 'z'; x++)
+	for (x = 'a'; x <= 'z'; x++)
 	{
 	_putchar(x);
 	}
