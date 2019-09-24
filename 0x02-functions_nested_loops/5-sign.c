@@ -1,4 +1,4 @@
-*Include "holberton.h"
+#include "holberton.h"
 
 /**
  * print_sign - Print sing numer
