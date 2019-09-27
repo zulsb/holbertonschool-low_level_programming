@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * print_square - Print square..
- *@size: i'm parameter.
+ * print_diagonal - Print diagonal
+ *@n: i'm parameter.
  * Return: Always 0 (Success)
  */
-void print_square(int size)
+void print_diagonal(int n)
 {
 	int i, j;
 
