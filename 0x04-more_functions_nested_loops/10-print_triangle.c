@@ -23,10 +23,10 @@ void print_triangle(int size)
 			}
 				space--;
 		_putchar('\n');
-	}
+		}
 	}
 	else
 	{
-		_putchar(' ');
+		_putchar('\n');
 	}
 }
