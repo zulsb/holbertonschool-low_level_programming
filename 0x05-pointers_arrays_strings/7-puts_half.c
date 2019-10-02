@@ -13,17 +13,19 @@ void puts_half(char *str)
 
 	a = 0;
 
-	while (*str != 0)
+	while (str[a] != 0)
+	{
 		a++;
+	}
 
 	if (a % 2 != 0)
 	{
-		b = (b - 1) / 2;
+		b = (a - 1) / 2;
 		b++;
 	}
 	else
 	{
-		b = 0 / 2;
+		b = a / 2;
 	}
 
 	while (str[b] != '\0')
