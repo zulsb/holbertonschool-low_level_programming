@@ -8,9 +8,7 @@
  */
 char *leet(char *s)
 {
-	int a, x;
-
-	a = 0;
+	int a = 0, x;
 
 	char l[] = {'a', 'e', 'o', 't', 'l', '\0'};
 	char u[] = {'A', 'E', 'O', 'T', 'L', '\0'};
