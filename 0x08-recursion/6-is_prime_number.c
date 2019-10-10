@@ -21,10 +21,10 @@ int is_prime_number(int n)
 int prime(int n, int x)
 {
 
-	if (x > n / 2)
-		return (1);
-	else if (n % x == 0 || n < 2)
+	if (n % x == 0 || n < 2)
 		return (0);
+	else if (x > n / 2)
+		return (1);
 
 	return (prime(n, x + 1));
 
