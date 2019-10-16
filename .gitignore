@@ -1,0 +1,9 @@
+*.o
+s
+a
+*-main.c
+*~
+*#
+_putchar.c
+*.swp
+*.out
