@@ -32,7 +32,7 @@ void print_all(const char * const format, ...)
 				break;
 				case 's':
 				po = va_arg(li, char *);
-				if (po != '\0')
+				if (po == '\0')
 				po = "(nil)";
 				printf("%s", po);
 				break;
@@ -40,12 +40,12 @@ void print_all(const char * const format, ...)
 				pr = 0;
 				break;
 			}
-		if (format[o + 1] && pr)
-		printf(", ");
-		o++;
+			if (format[o + 1] && pr)
+				printf(", ");
+			o++;
 		}
-	va_end(li);
-	break;
+		va_end(li);
+		break;
 	}
 	printf("\n");
 }
