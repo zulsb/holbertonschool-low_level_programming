@@ -1,6 +1,8 @@
 global main
-exter printf
+extern printf
+
 section .text
+
 main:
 	mov 	rdi, format
 	mov	rax, 0
@@ -8,4 +10,4 @@ main:
 	mov	rax, 0
 	ret
 format:
-db "Hello, Holberton", 10, 0
+	db "Hello, Holberton", 10, 0
