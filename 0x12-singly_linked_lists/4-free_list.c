@@ -8,14 +8,11 @@
 
 void free_list(list_t *head)
 {
-	if (head == '\0')
-	return;
 
-	while (head != '\0')
+	if (head != '\0')
 	{
-	free_list(head->next);
-	free(head->str);
+		free_list(head->next);
+		free(head->str);
+		free(head);
 	}
-	free(head);
-
 }
