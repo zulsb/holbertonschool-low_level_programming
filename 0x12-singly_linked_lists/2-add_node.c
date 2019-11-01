@@ -19,10 +19,11 @@ list_t *add_node(list_t **head, const char *str)
 	for (; str[l] != '\0'; l++)
 	{
 	}
+
 	a->str = strdup(str);
 	a->len = l;
 	a->next = *head;
-	*head = l;
+	*head = a;
 
 	return (a);
 }
