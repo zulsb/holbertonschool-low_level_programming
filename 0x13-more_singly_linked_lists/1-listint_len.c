@@ -10,7 +10,7 @@ size_t listint_len(const listint_t *h)
 
 	rec = 0;
 
-	while (rec != '\0')
+	while (h != '\0')
 	{
 		h = (*h).next;
 		rec++;
