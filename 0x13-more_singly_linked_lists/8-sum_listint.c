@@ -9,7 +9,7 @@ int sum_listint(listint_t *head)
 	int s;
 
 	s = 0;
-	
+
 	while (head != '\0')
 	{
 		s += (*head).n;
