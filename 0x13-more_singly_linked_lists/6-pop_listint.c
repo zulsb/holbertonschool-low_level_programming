@@ -10,12 +10,11 @@ int pop_listint(listint_t **head)
 	listint_t *rec;
 	int nod;
 
-	if (*head == '\0')
+	if (*head != '\0')
 	{
 		rec = *head;
 		*head = (*rec).next;
 		nod = (*rec).n;
-
 		free(rec);
 		return (nod);
 	}
