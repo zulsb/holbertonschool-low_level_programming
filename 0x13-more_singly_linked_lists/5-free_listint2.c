@@ -8,7 +8,7 @@ void free_listint2(listint_t **head)
 {
 	listint_t *rec;
 
-	while (*head != '\0' && head != '\0')
+	while (head != '\0' && *head != '\0')
 	{
 		rec = *head;
 		*head = (*rec).next;
