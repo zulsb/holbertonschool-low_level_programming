@@ -19,9 +19,10 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(rec);
 		return (1);
 	}
-	for (s = 0; rec != '\0' && s < (index - 1); s++)
+	while (*head != '\0' && s < index - 1)
 	{
 		rec = (*rec).next;
+		s++;
 	}
 	if (rec == '\0' || (*rec).next == '\0')
 		return (-1);
