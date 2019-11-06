@@ -25,6 +25,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 	if (rec == '\0' || (*rec).next == '\0')
 		return (-1);
+
+	next = rec;
 	next = rec->next->next;
 	free((*rec).next);
 	(*rec).next = next;
