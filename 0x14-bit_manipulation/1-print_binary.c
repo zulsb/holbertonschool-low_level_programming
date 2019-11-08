@@ -11,7 +11,7 @@ void print_binary(unsigned long int n)
 	int s;
 
 	s = 0;
-	rec = 1UL << 63;
+	rec = 1UL << sizeof(unsigned int) * 8;
 
 	if (n == 0)
 	{
