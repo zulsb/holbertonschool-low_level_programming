@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	}
-	while ((rr = read(arc1, sto, 1024) < 0);
+	while ((rr = read(arc1, sto, 1024)) > 0)
 	{
 		ww = write(arc2, sto, rr);
 	}
