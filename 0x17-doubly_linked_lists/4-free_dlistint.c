@@ -4,7 +4,6 @@
   *free_dlistint - free the dlistint_t list.
   *@head: pointer variable type dlistint_t.
   *Return: nothing.
-  *
  */
 
 void free_dlistint(dlistint_t *head)
@@ -13,9 +12,9 @@ void free_dlistint(dlistint_t *head)
 
 	while (head != '\0')
 	{
-		rec = (*head).next;
+		rec = head;
+		head = (*head).next;
 		free(rec);
-		head = rec;
 	}
 
 }
