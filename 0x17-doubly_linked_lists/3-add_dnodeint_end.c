@@ -22,6 +22,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	if (*head == '\0')
 	{
+		(*rec).prev = NULL;
 		*head = rec;
 			return (rec);
 	}
@@ -30,7 +31,8 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		while ((*saf).next != '\0')
 			saf = (*saf).next;
 		(*saf).next = rec;
+		(*rec).prev = saf;
 	}
 
-	return (*head);
+	return (rec);
 }
