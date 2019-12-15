@@ -14,13 +14,13 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	saf = *head;
 
 	rec = malloc(sizeof(dlistint_t));
-	if (rec == '\0')
-		return ('\0')
+	if (rec == NULL)
+		return (NULL)
 
 	(*rec).n = n;
-	(*rec).next = '\0';
+	(*rec).next = NULL;
 
-	if (*head == '\0')
+	if (*head == NULL)
 	{
 		(*rec).prev = NULL;
 		*head = rec;
@@ -28,7 +28,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 	else
 	{
-		while ((*saf).next != '\0')
+		while ((*saf).next)
 			saf = (*saf).next;
 		(*saf).next = rec;
 		(*rec).prev = saf;
